@@ -1,0 +1,7 @@
+addon selenium version 4.104.0.0
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+selenium.open chrome url https://economictimes.indiatimes.com/markets/forex/currency-converter/usd-to-inr timeout 20000
+selenium.gettext search //*[@id="spot_value"] by xpath result ♥quote
+dialog ‴USD/INR quote: ‴♥quote
+selenium.close

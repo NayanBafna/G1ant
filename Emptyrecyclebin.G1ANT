@@ -1,0 +1,12 @@
+addon ui version 4.104.0.0
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+ui.click ‴/ui[@name='Taskbar']/ui[@id='4100']/ui[@id='4101']‴
+delay 3
+keyboard ‴recycle bin‴
+delay 3
+keyboard ⋘ENTER⋙
+
+ui.click ‴/ui[@name='Recycle Bin']/ui[@name='UIRibbonDockTop']/ui[@name='Ribbon']/ui[@name='Ribbon']/descendant::ui[@name='Ribbon']/ui[@name='Quick Access Toolbar']/ui[@name='Empty Recycle Bin']‴ errormessage ‴No files are there in recycle bin folder‴ errorjump end
+keyboard ⋘ENTER⋙
+label end 

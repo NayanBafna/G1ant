@@ -1,0 +1,23 @@
+addon selenium version 4.104.0.0
+addon msoffice version 4.104.0.0
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+selenium.open chrome url https://www.amazon.in/?ref=icp_country_us_t1 timeout 20000
+window ✱chrome style maximize
+selenium.type text ‴mi basic earphone‴ search twotabsearchtextbox by id
+keyboard ⋘ENTER⋙
+selenium.click search //*[@id="search"]/div[1]/div[2]/div/span[3]/div[2]/div[2]/div/span/div/div/div[2]/div[2]/div/div[1]/div/div/div[1]/h2/a/span by xpath
+selenium.gettext search //*[@id="priceblock_ourprice"] by xpath result ♥amazon
+selenium.newtab url flipkart.com  timeout 20000
+delay 5
+selenium.click search /html/body/div[2]/div/div/button by xpath
+selenium.type text ‴mi basic earphone‴ search //*[@id="container"]/div/div[1]/div[1]/div[2]/div[2]/form/div/div/input by xpath
+keyboard ⋘ENTER⋙
+selenium.click search //*[@id="container"]/div/div[3]/div[2]/div[1]/div[2]/div[2]/div/div[1]/div/a[2] by xpath
+selenium.gettext search //*[@id="container"]/div/div[3]/div[2]/div[1]/div[2]/div[2]/div/div[3]/div[1]/div/div[1] by xpath result ♥flipkart timeout 20000
+
+program notepad
+window ✱notepad
+Keyboard ‴Amazon > mi basic earphone > price:♥amazon‴
+keyboard ⋘ENTER⋙
+keyboard ‴Flipkart > mi basic earphone > price : ♥flipkart‴ 

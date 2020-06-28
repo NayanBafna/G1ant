@@ -1,0 +1,9 @@
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+program calc
+window ✱calculator
+keyboard ‴56/72*100=‴
+delay 2
+keyboard ‴52/72*100=‴
+delay 2
+keyboard ‴58*100/72=‴
